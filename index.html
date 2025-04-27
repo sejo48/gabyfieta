@@ -10,42 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos personalizados con imagen de fondo */
+        /* Estilos personalizados con fondo de hoja actualizado */
         body {
             font-family: 'Quicksand', sans-serif;
-            /* Imagen de fondo añadida */
             background-image: url('https://wallpapers.com/images/hd/hippie-aesthetic-b8apui9pm9orwz20.jpg');
-            background-size: cover; /* Cubrir toda la pantalla */
-            background-position: center; /* Centrar imagen */
-            background-repeat: no-repeat; /* No repetir imagen */
-            background-attachment: fixed; /* Fondo fijo al hacer scroll */
-            /* Color de fondo de respaldo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             background-color: #faf0e6; /* Linen */
-            /* Asegurar que el contenido no se pegue a los bordes */
-            padding: 1rem; /* Añadir padding al body */
+            padding: 1rem;
         }
 
         .form-container {
-            background-color: #fffef0; /* Marfil suave */
+            /* Fondo actualizado a Wheat */
+            background-color: #f5deb3; /* Wheat */
             border-radius: 1.5rem;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            overflow: hidden; /* Importante para bordes redondeados */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Sombra un poco más definida */
+            overflow: hidden;
             position: relative;
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInSlideUp 0.8s ease-out forwards;
             animation-delay: 0.2s;
             max-width: 700px;
-            width: 100%; /* Ocupar el ancho disponible del padding del body */
-            /* Padding interno del contenedor */
+            width: 100%;
             padding: 1.5rem; /* p-6 */
-            margin: 2rem auto; /* Añadir margen vertical y centrar horizontalmente */
+            margin: 2rem auto;
         }
-         /* Ajustar padding interno en pantallas más grandes */
-        @media (min-width: 768px) { /* md breakpoint */
-            .form-container {
-                padding: 2.5rem; /* p-10 */
-            }
+         @media (min-width: 768px) {
+            .form-container { padding: 2.5rem; /* p-10 */ }
         }
 
         @keyframes fadeInSlideUp {
@@ -58,7 +52,7 @@
             position: absolute; width: 10px; height: 10px;
             background-color: var(--color, #fbcfe8); border-radius: 50%;
             opacity: 0.8; animation: confetti-fall 6s infinite linear;
-            top: -20px; z-index: 0; /* Detrás del contenido del contenedor */
+            top: -20px; z-index: 0;
         }
         .confetti:nth-child(1) { left: 10%; animation-delay: 0s; --color: #fbcfe8; }
         .confetti:nth-child(2) { left: 25%; animation-delay: 1.5s; --color: #a5f3fc; }
@@ -90,7 +84,8 @@
         /* Campos de texto */
         input[type="text"], input[type="number"], textarea {
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background-color: #fff;
+            background-color: #fff; /* Fondo blanco para campos */
+            border-color: #d1d5db; /* Borde gris claro por defecto */
         }
         input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
             box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.3);
@@ -107,7 +102,7 @@
 
         /* Sección invitación */
         .invitation-section {
-            border-bottom: 2px dashed #fcd34d;
+            border-bottom: 2px dashed #fcd34d; /* Mantener amarillo para contraste */
             padding-bottom: 1.5rem; margin-bottom: 1.5rem;
         }
         .invitation-section h2 {
@@ -133,14 +128,15 @@
             text-align: left;
         }
          .invitation-section strong { color: #c026d3; font-weight: 700; }
-         #guestName { font-weight: 700; color: #c026d3; }
          .invitation-section ul { list-style: none; padding-left: 0; }
          .invitation-section li::before {
             content: "\f004"; font-family: "Font Awesome 6 Free";
             font-weight: 900; margin-right: 0.6rem; color: #ef4444;
          }
          .invitation-section .details-block {
-            background-color: #fffdf7; padding: 1.5rem; border-radius: 0.75rem;
+             /* Volver a un tono muy claro para contraste con el fondo Wheat */
+            background-color: #fffefa; /* Marfil muy claro */
+            padding: 1.5rem; border-radius: 0.75rem;
             margin-top: 1.5rem; margin-bottom: 1.5rem;
             border-left: 4px solid #f59e0b; text-align: left;
          }
@@ -155,23 +151,25 @@
 
     </style>
     </head>
-<body class="flex items-center justify-center min-h-screen"> <div class="form-container"> <div class="confetti"></div> <div class="confetti"></div> <div class="confetti"></div>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="form-container">
+        <div class="confetti"></div> <div class="confetti"></div> <div class="confetti"></div>
         <div class="confetti"></div> <div class="confetti"></div> <div class="confetti"></div>
 
         <div class="invitation-section relative z-10">
-             <h2><i class="fas fa-birthday-cake mr-2 text-yellow-500"></i> ¡Celebremos el 60º Cumpleaños de Gaby! <i class="fas fa-peace text-purple-500 ml-2"></i></h2>
+             <h2><i class="fas fa-peace mr-2 text-purple-500"></i> ¡Paz, Amor y 60 Años para Gaby! <i class="fas fa-heart text-red-500 ml-1"></i><i class="fas fa-seedling text-green-500 ml-1"></i></h2>
 
              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6b-GB51dup7HlfqQn9-gWWBJZ99u9k2ef4MUzxGQNbauvdpl5WLjqltekVAGgSxV-xSnsgnxZ2EKInzVkzkpnnq1uP2TP6cXukrxhKtQGyrDYgePjRRnxMB7GnJtpHWUzWAK7jMcXzPubkU5qjTqXGBYnrn3TH3GaW0fill9T3dz6BW2Sbuby-K4X-S8/w440-h440/ChatGPT%20Image%2027%20abr%202025,%2012_39_06%20p.m..png"
                   alt="Imagen de fiesta hippie con símbolo de paz y flores"
                   class="main-image w-full mx-auto rounded-lg mb-6"
                   onerror="this.onerror=null; this.src='https://placehold.co/440x440/fbcfe8/db2777?text=Fiesta+Gaby+60';">
 
-             <p><span id="guestName">Invitado/a especial</span>, estás invitado/a a celebrar el 60º cumpleaños de nuestra querida Ana Gabriela Castillo Suárez, a quien conocemos cariñosamente como <strong>Gaby</strong>.</p>
+             <p>Estás invitado/a a celebrar el 60º cumpleaños de nuestra querida Ana Gabriela Castillo Suárez, a quien conocemos cariñosamente como <strong>Gaby</strong>.</p>
 
             <div class="details-block">
                 <p><strong>Detalles del Evento:</strong></p>
                 <ul>
-                    <li><strong>Fecha:</strong> 18 de julio de 2025</li>
+                    <li><strong>Fecha:</strong> 19 de julio de 2025</li>
                     <li><strong>Hora:</strong> A partir de las 6:00 PM</li>
                     <li><strong>Lugar:</strong> Nuestro rancho de fiesta en la colonia San Sebastián.</li>
                     <li><strong>Temática:</strong> ¡Fiesta de disfraces estilo <strong>hippie</strong> de los años 60! <i class="fas fa-guitar text-yellow-600 ml-1"></i></li>
@@ -246,15 +244,6 @@
             }
             return params;
         }
-
-        // --- Insertar nombre del invitado al cargar la página ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const params = getQueryParams();
-            const guestNameElement = document.getElementById('guestName');
-            if (params.name && guestNameElement) {
-                guestNameElement.textContent = params.name;
-            }
-        });
 
         // --- Lógica del formulario ---
         const form = document.getElementById('rsvpForm');
