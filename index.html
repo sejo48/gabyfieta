@@ -10,17 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos personalizados con nuevas fuentes */
+        /* Estilos personalizados con nuevas fuentes y fondo temático */
         body {
-            /* Fuente principal Quicksand */
             font-family: 'Quicksand', sans-serif;
-            /* Fondo degradado */
             background: linear-gradient(135deg, #f9a8d4 0%, #fcd34d 30%, #fb923c 70%, #c084fc 100%);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
         }
 
-        /* Animación para el fondo degradado */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -28,9 +25,10 @@
         }
 
         .form-container {
-            background-color: rgba(255, 255, 255, 0.95);
+            /* Fondo actualizado a un tono crema/marfil */
+            background-color: #fffef0; /* Marfil suave */
             border-radius: 1.5rem;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Sombra ligeramente más oscura para contraste */
             overflow: hidden;
             position: relative;
             opacity: 0;
@@ -39,15 +37,24 @@
             animation-delay: 0.2s;
             max-width: 700px;
             width: 95%;
+            /* Añadir padding superior e inferior extra en móviles */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+         /* Ajustar padding lateral en pantallas más grandes */
+        @media (min-width: 768px) { /* md breakpoint de Tailwind */
+            .form-container {
+                padding-left: 2.5rem; /* Equivalente a p-10 */
+                padding-right: 2.5rem; /* Equivalente a p-10 */
+            }
         }
 
-        /* Keyframes para la animación de entrada */
+
         @keyframes fadeInSlideUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Simulación de confeti */
         .confetti {
             position: absolute;
             width: 10px;
@@ -73,7 +80,6 @@
             100% { transform: translateY(calc(100vh + 20px)) rotate(720deg); opacity: 0; }
         }
 
-        /* Estilo del botón */
         .submit-button {
             background: linear-gradient(to right, #fb923c, #f472b6);
             transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -88,11 +94,11 @@
              box-shadow: 0 4px 8px rgba(251, 146, 60, 0.4);
         }
 
-        /* Estilo campos de texto */
         input[type="text"],
         input[type="number"],
         textarea {
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff; /* Asegurar fondo blanco para campos */
         }
         input[type="text"]:focus,
         input[type="number"]:focus,
@@ -101,7 +107,6 @@
             border-color: #fb923c;
         }
 
-        /* Mensaje de agradecimiento */
         #thankYouMessage {
             display: none;
             background-color: #d1fae5;
@@ -117,21 +122,19 @@
             transform: scale(1);
         }
 
-        /* Estilos sección invitación */
         .invitation-section {
             border-bottom: 2px dashed #fcd34d;
             padding-bottom: 1.5rem;
             margin-bottom: 1.5rem;
         }
-        /* Aplicar Pacifico al título principal h2 */
         .invitation-section h2 {
-            font-family: 'Pacifico', cursive; /* Fuente Pacifico para el título */
-            font-size: 2.25rem; /* Ajustar tamaño si es necesario */
-            line-height: 1.3; /* Ajustar interlineado para script */
-            font-weight: normal; /* Pacifico no necesita bold */
+            font-family: 'Pacifico', cursive;
+            font-size: 2.25rem;
+            line-height: 1.3;
+            font-weight: normal;
             text-align: center;
-            color: #c026d3; /* Morado oscuro */
-            margin-bottom: 1.5rem; /* Más espacio después del título */
+            color: #c026d3;
+            margin-bottom: 1.5rem;
         }
         .invitation-section p, .invitation-section li {
             color: #374151;
@@ -141,10 +144,10 @@
         }
          .invitation-section strong {
             color: #c026d3;
-            font-weight: 700; /* Asegurar que strong use el peso correcto de Quicksand */
+            font-weight: 700;
          }
          #guestName {
-             font-weight: 700; /* Usar peso bold de Quicksand */
+             font-weight: 700;
              color: #c026d3;
          }
          .invitation-section ul {
@@ -160,7 +163,8 @@
             color: #ef4444;
          }
          .invitation-section .details-block {
-            background-color: #fffbeb;
+            /* Fondo ligeramente más contrastante que el principal */
+            background-color: #fffdf7;
             padding: 1.5rem;
             border-radius: 0.75rem;
             margin-top: 1.5rem;
@@ -172,21 +176,19 @@
              text-align: left;
              margin-bottom: 0.5rem;
          }
-         /* Imagen principal */
         .main-image {
             max-width: 300px;
             height: auto;
             box-shadow: 0 8px 16px rgba(0,0,0,0.15);
         }
-        /* Ajuste para el título del formulario */
         .form-title {
-             font-weight: 700; /* Usar peso bold de Quicksand */
+             font-weight: 700;
         }
 
     </style>
     </head>
 <body class="flex items-center justify-center min-h-screen p-4 overflow-x-hidden">
-    <div class="form-container p-6 md:p-10">
+    <div class="form-container px-6 md:px-10">
         <div class="confetti"></div>
         <div class="confetti"></div>
         <div class="confetti"></div>
