@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación y Confirmación Cumpleaños 60 Gaby</title>
-
-    <meta property="og:title" content="¡Fiesta 60 Años Gaby! (Estilo Hippie)">
-    <meta property="og:description" content="¡Estás invitado/a a celebrar el 60º cumpleaños de Gaby con una fiesta hippie inolvidable!">
-    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6b-GB51dup7HlfqQn9-gWWBJZ99u9k2ef4MUzxGQNbauvdpl5WLjqltekVAGgSxV-xSnsgnxZ2EKInzVkzkpnnq1uP2TP6cXukrxhKtQGyrDYgePjRRnxMB7GnJtpHWUzWAK7jMcXzPubkU5qjTqXGBYnrn3TH3GaW0fill9T3dz6BW2Sbuby-K4X-S8/w440-h440/ChatGPT%20Image%2027%20abr%202025,%2012_39_06%20p.m..png">
-    <meta property="og:type" content="website">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos personalizados */
+        /* Estilos personalizados con fondo de hoja actualizado */
         body {
             font-family: 'Quicksand', sans-serif;
             background-image: url('https://wallpapers.com/images/hd/hippie-aesthetic-b8apui9pm9orwz20.jpg');
@@ -28,9 +23,10 @@
         }
 
         .form-container {
+            /* Fondo actualizado a Wheat */
             background-color: #f5deb3; /* Wheat */
             border-radius: 1.5rem;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Sombra un poco más definida */
             overflow: hidden;
             position: relative;
             opacity: 0;
@@ -88,8 +84,8 @@
         /* Campos de texto */
         input[type="text"], input[type="number"], textarea {
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background-color: #fff;
-            border-color: #d1d5db;
+            background-color: #fff; /* Fondo blanco para campos */
+            border-color: #d1d5db; /* Borde gris claro por defecto */
         }
         input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
             box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.3);
@@ -106,7 +102,7 @@
 
         /* Sección invitación */
         .invitation-section {
-            border-bottom: 2px dashed #fcd34d;
+            border-bottom: 2px dashed #fcd34d; /* Mantener amarillo para contraste */
             padding-bottom: 1.5rem; margin-bottom: 1.5rem;
         }
         .invitation-section h2 {
@@ -138,7 +134,8 @@
             font-weight: 900; margin-right: 0.6rem; color: #ef4444;
          }
          .invitation-section .details-block {
-            background-color: #fffefa;
+             /* Volver a un tono muy claro para contraste con el fondo Wheat */
+            background-color: #fffefa; /* Marfil muy claro */
             padding: 1.5rem; border-radius: 0.75rem;
             margin-top: 1.5rem; margin-bottom: 1.5rem;
             border-left: 4px solid #f59e0b; text-align: left;
@@ -147,8 +144,13 @@
              text-align: left; margin-bottom: 0.5rem;
          }
         .main-image {
-            max-width: 280px;
-            height: auto; box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            max-width: 280px; /* Ajusta si es necesario, pero mantenlo razonable */
+            width: 100%; /* Haz que ocupe el ancho del contenedor hasta el max-width */
+            height: auto; /* Mantiene la proporción */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            display: block; /* Para centrar con margin: auto */
+            margin-left: auto;
+            margin-right: auto;
         }
         .form-title { font-weight: 700; }
 
@@ -162,28 +164,26 @@
         <div class="invitation-section relative z-10">
              <h2><i class="fas fa-peace mr-2 text-purple-500"></i> ¡Paz, Amor y 60 Años para Gaby! <i class="fas fa-heart text-red-500 ml-1"></i><i class="fas fa-seedling text-green-500 ml-1"></i></h2>
 
-             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6b-GB51dup7HlfqQn9-gWWBJZ99u9k2ef4MUzxGQNbauvdpl5WLjqltekVAGgSxV-xSnsgnxZ2EKInzVkzkpnnq1uP2TP6cXukrxhKtQGyrDYgePjRRnxMB7GnJtpHWUzWAK7jMcXzPubkU5qjTqXGBYnrn3TH3GaW0fill9T3dz6BW2Sbuby-K4X-S8/w440-h440/ChatGPT%20Image%2027%20abr%202025,%2012_39_06%20p.m..png"
-                  alt="Imagen de fiesta hippie con símbolo de paz y flores"
-                  class="main-image w-full mx-auto rounded-lg mb-6"
-                  onerror="this.onerror=null; this.src='https://placehold.co/440x440/fbcfe8/db2777?text=Fiesta+Gaby+60';">
-
-             <p>Estás invitado/a a celebrar el 60º cumpleaños de nuestra querida Ara Gabriela Castillo Suárez, a quien conocemos cariñosamente como <strong>Gaby</strong>.</p>
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY1RA1dQj8-WVzTh6PHvAZHL-fijPkrtXV-y4ikxJVWceK0YT95pge7Q0prhLbJ0kU3RpfVKiiD-a178M5_nzNAh94SYx1EWhEpfVRM8TlQRHN_zQxKhHEEQmmdPG0fD2J4PBBZwtSyH7cZzG3pnIVwyc_nA2gHXPcK1TF6XKo5s8_ei4I8ol2sqZoN_g/w383-h540/WhatsApp%20Image%202025-04-28%20at%206.37.16%20PM.jpeg"
+                  alt="Foto de Gaby sonriendo" class="main-image rounded-lg mb-6"
+                  onerror="this.onerror=null; this.src='https://placehold.co/383x540/fbcfe8/db2777?text=Foto+Gaby+60';"> <p>Estás invitado/a a celebrar el 60º cumpleaños de nuestra querida Ana Gabriela Castillo Suárez, a quien conocemos cariñosamente como <strong>Gaby</strong>.</p>
 
             <div class="details-block">
-                <p><strong>Detalles del Evento:</strong></p>
-                <ul>
-                    <li><strong>Fecha:</strong> 19 de julio de 2025</li>
-                    <li><strong>Hora:</strong> A partir de las 6:00 PM</li>
-                    <li><strong>Lugar:</strong> Nuestro rancho de fiesta en la colonia San Sebastián.</li>
-                    <li><strong>Temática:</strong> ¡Fiesta de disfraces estilo <strong>hippie</strong> de los años 60! <i class="fas fa-guitar text-yellow-600 ml-1"></i></li>
-                </ul>
+                 <p><strong>Detalles del Evento:</strong></p>
+                 <ul>
+                     <li><strong>Fecha:</strong> 19 de julio de 2025</li>
+                     <li><strong>Hora:</strong> A partir de las 6:00 PM</li>
+                     <li><strong>Lugar:</strong> Nuestro rancho de fiesta en la Colonia San Sebastián.</li>
+                     <li><strong>Temática:</strong> ¡Fiesta de disfraces estilo <strong>hippie</strong> de los años 60! <i class="fas fa-guitar text-yellow-600 ml-1"></i></li>
+                 </ul>
             </div>
 
             <p class="mt-6 font-semibold">¡Únete a nosotros para compartir momentos inolvidables y celebrar a Gaby! Esperamos verte allí. ✨</p>
 
         </div>
+
         <h1 class="form-title text-xl md:text-2xl text-center text-pink-600 mb-4 relative z-10"> <i class="fas fa-check-circle mr-2 text-green-500"></i>
-            Confirma tu Asistencia Aquí
+             Confirma tu Asistencia Aquí
         </h1>
 
         <form id="rsvpForm" class="space-y-5 relative z-10">
@@ -237,6 +237,7 @@
 
     <script>
         // --- Función para obtener parámetros de la URL ---
+        // (No es necesaria para esta funcionalidad básica, pero se deja por si acaso)
         function getQueryParams() {
             const params = {};
             const queryString = window.location.search.substring(1);
@@ -251,11 +252,11 @@
         // --- Lógica del formulario ---
         const form = document.getElementById('rsvpForm');
         const thankYouMessage = document.getElementById('thankYouMessage');
-        const whatsappNumber = '50660132444'; // Ajusta si es necesario
-        const hostOrHonoreeName = "Gaby";
+        const whatsappNumber = '50660132444'; // Número de WhatsApp con código de país (Costa Rica)
+        const hostOrHonoreeName = "Gaby"; // Nombre de la festejada
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault();
+            event.preventDefault(); // Evita el envío tradicional del formulario
 
             const formData = new FormData(form);
             const fullName = formData.get('fullName');
@@ -263,53 +264,117 @@
             const guests = formData.get('guests');
             const comments = formData.get('comments');
 
-            // --- Validaciones ---
+            // --- Validaciones básicas ---
+            // Verifica que el nombre no esté vacío
             if (!fullName || fullName.trim() === '') {
-                 alert('Por favor, ingresa tu nombre completo.');
-                 document.getElementById('fullName')?.focus();
-                 return;
+                // Usa un cuadro de mensaje personalizado en lugar de alert()
+                showCustomAlert('Por favor, ingresa tu nombre completo.');
+                document.getElementById('fullName')?.focus(); // Pone el foco en el campo de nombre
+                return; // Detiene la ejecución si la validación falla
             }
+            // Verifica que se haya seleccionado una opción de asistencia
             if (!attendance) {
-                alert('Por favor, selecciona si asistirás.');
-                 const firstRadioButton = form.querySelector('input[name="attendance"]');
-                 firstRadioButton?.focus();
+                showCustomAlert('Por favor, selecciona si asistirás.');
+                const firstRadioButton = form.querySelector('input[name="attendance"]');
+                firstRadioButton?.focus(); // Pone el foco en la primera opción de radio
                 return;
             }
+             // Verifica que el número de invitados sea válido (al menos 1)
             if (!guests || parseInt(guests) < 1) {
-                 alert('Por favor, indica cuántas personas asistirán (mínimo 1).');
-                 document.getElementById('guests')?.focus();
-                 return;
+                showCustomAlert('Por favor, indica cuántas personas asistirán (mínimo 1).');
+                document.getElementById('guests')?.focus(); // Pone el foco en el campo de invitados
+                return;
             }
 
-            // --- Mensaje WhatsApp ---
+            // --- Construcción del Mensaje WhatsApp ---
             let message = `*Confirmación Cumpleaños 60 ${hostOrHonoreeName}* 🎉\n\n`;
             message += `*Nombre:* ${fullName}\n`;
             message += `*Asistencia:* ${attendance}\n`;
             message += `*Número de Personas:* ${guests}\n`;
+            // Añade el mensaje solo si no está vacío
             if (comments && comments.trim() !== '') {
                 message += `*Mensaje para ${hostOrHonoreeName}:* ${comments}\n`;
             }
-            message += `\n¡Confirmación enviada desde la invitación web! ☮️`;
+            message += `\n¡Confirmación enviada desde la invitación web! ☮️`; // Mensaje final
 
+            // Codifica el mensaje para la URL de WhatsApp
             const encodedMessage = encodeURIComponent(message);
+            // Construye la URL de WhatsApp
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            // Abre WhatsApp en una nueva pestaña
             window.open(whatsappURL, '_blank');
 
-            // --- UI Feedback ---
+            // --- Feedback Visual para el Usuario ---
+            // Oculta el formulario con una transición
+            form.style.transition = 'opacity 0.5s ease-out';
             form.style.opacity = '0';
-            form.style.pointerEvents = 'none';
+            form.style.pointerEvents = 'none'; // Deshabilita interacciones con el formulario oculto
+
+            // Espera a que termine la transición para ocultar completamente y mostrar el mensaje
             setTimeout(() => {
-                 form.style.display = 'none';
-                 thankYouMessage.classList.add('visible');
-                 thankYouMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 500);
+                form.style.display = 'none'; // Oculta el formulario del layout
+                thankYouMessage.classList.add('visible'); // Muestra el mensaje de agradecimiento
+                // Desplaza la vista suavemente hacia el mensaje de agradecimiento
+                thankYouMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 500); // 500ms coincide con la duración de la transición de opacidad
         });
 
-        // --- Actualizar etiqueta comentarios ---
+        // --- Actualizar etiqueta comentarios dinámicamente ---
         const commentLabel = document.querySelector('label[for="comments"]');
         if (commentLabel) {
+            // Asegura que la etiqueta siempre muestre el nombre correcto de la festejada
             commentLabel.textContent = `¿Algún mensaje para ${hostOrHonoreeName}?`;
         }
+
+        // --- Función para mostrar alertas personalizadas (Reemplazo de alert()) ---
+        function showCustomAlert(message) {
+            // Crea un div para la alerta
+            const alertBox = document.createElement('div');
+            alertBox.style.position = 'fixed';
+            alertBox.style.left = '50%';
+            alertBox.style.top = '20px';
+            alertBox.style.transform = 'translateX(-50%)';
+            alertBox.style.padding = '15px 25px';
+            alertBox.style.backgroundColor = '#f8d7da'; // Rojo claro para errores
+            alertBox.style.color = '#721c24'; // Texto oscuro
+            alertBox.style.border = '1px solid #f5c6cb';
+            alertBox.style.borderRadius = '8px';
+            alertBox.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+            alertBox.style.zIndex = '1000'; // Asegura que esté por encima de otros elementos
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.3s ease';
+            alertBox.textContent = message;
+
+            // Botón para cerrar la alerta
+            const closeButton = document.createElement('button');
+            closeButton.textContent = '×'; // Símbolo de cierre
+            closeButton.style.position = 'absolute';
+            closeButton.style.top = '5px';
+            closeButton.style.right = '10px';
+            closeButton.style.background = 'none';
+            closeButton.style.border = 'none';
+            closeButton.style.fontSize = '20px';
+            closeButton.style.color = '#721c24';
+            closeButton.style.cursor = 'pointer';
+            closeButton.onclick = () => {
+                alertBox.style.opacity = '0';
+                setTimeout(() => alertBox.remove(), 300); // Elimina después de la transición
+            };
+            alertBox.appendChild(closeButton);
+
+            // Añade la alerta al body y la hace visible
+            document.body.appendChild(alertBox);
+            // Pequeño delay para que la transición de opacidad funcione
+            setTimeout(() => alertBox.style.opacity = '1', 10);
+
+            // Opcional: Cierra automáticamente después de unos segundos
+            setTimeout(() => {
+                if (document.body.contains(alertBox)) { // Verifica si aún existe
+                   closeButton.onclick(); // Simula clic en cerrar
+                }
+            }, 5000); // Cierra después de 5 segundos
+        }
+
     </script>
 </body>
 </html>
